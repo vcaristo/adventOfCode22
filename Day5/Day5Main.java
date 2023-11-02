@@ -29,10 +29,8 @@ public class Day5Main {
             get the message with the top crate on each stack
                 myShip.topCrates()
          */
-        // open file
         File myFile = new File("day5.txt");
 
-        // open scanner
         Scanner sc = new Scanner(myFile);
 
         Ship myShip = new Ship();
@@ -55,7 +53,6 @@ public class Day5Main {
 
         while (sc.hasNextLine()) {
             try {
-                // read the line
                 String line = sc.nextLine();
 
                 int[] instructions = Day5Main.readInstructions(line);

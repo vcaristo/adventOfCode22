@@ -16,13 +16,10 @@ public class Day4Main {
 
          */
 
-        // counter
         int counter = 0;
 
-        // open file
         File myFile = new File("day4.txt");
 
-        // open scanner
         Scanner sc = new Scanner(myFile);
 
         String str = "57-45,90-57 8-9,5-7";
@@ -30,7 +27,6 @@ public class Day4Main {
         // read each line of plays
         while (sc.hasNextLine()) {
             try {
-                // read the line
                 String pair = sc.nextLine();
 
                 // check if pairs fully contain
