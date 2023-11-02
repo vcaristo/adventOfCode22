@@ -20,7 +20,6 @@ public class Day8Main {
         ArrayList<ArrayList<Integer>> forest = new ArrayList<ArrayList<Integer>>();
         ArrayList<ArrayList<Integer>> treesVisible = new ArrayList<ArrayList<Integer>>();
 
-        // open file scanner
         File myFile = new File("day8.txt");
         Scanner sc = new Scanner(myFile);
 
@@ -38,7 +37,6 @@ public class Day8Main {
                 forest.get(forest.size() - 1).add(treeHeight);
             }
         }
-        //close stream
         sc.close();
 
         // setup the forest grids

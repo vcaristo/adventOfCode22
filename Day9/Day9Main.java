@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 
-public class Day9Main_2 {
+public class Day9Main {
     // setup and initailze array of knots
     // head = 0
     public static ArrayList<Integer[]> rope = new ArrayList<Integer[]>();
@@ -34,16 +34,16 @@ public class Day9Main_2 {
 
         while (sc.hasNextLine()) {
             // read and parse a line
-            Map<String, Integer> move = Day9Main_2.readLine(sc.nextLine());
+            Map<String, Integer> move = Day9Main.readLine(sc.nextLine());
 
             String dir = (String) move.keySet().toArray()[0];
             int numMoves = move.get(dir);
 
             // move the head and tail
             for (int i = 0; i < numMoves; i++) {
-                Day9Main_2.moveHead(dir);
+                Day9Main.moveHead(dir);
                 for (int j = 1; j < rope.size(); j++) {
-                    Day9Main_2.moveTail(j - 1, j);
+                    Day9Main.moveTail(j - 1, j);
                 }
                 // update places visited
                 String newTailPos = Integer.toString(rope.get(9)[0]) + " " + Integer.toString(rope.get(9)[1]);
@@ -126,3 +126,4 @@ public class Day9Main_2 {
     }
 
 }
+t 

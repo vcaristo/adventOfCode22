@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Day3Main_2 {
+public class Day3Main {
 
     // list with all of the groups of elves
     ArrayList<ArrayList<Elf>> elfGroups = new ArrayList<ArrayList<Elf>>();
@@ -15,7 +15,7 @@ public class Day3Main_2 {
 
     // create an instance of the class and run the program
     public static void main(String[] args) throws FileNotFoundException {
-        new Day3Main_2().run();
+        new Day3Main().run();
     }
 
     public void run() throws FileNotFoundException {

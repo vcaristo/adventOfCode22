@@ -27,7 +27,6 @@ public class Day6Main {
     }
 
     public static int findStart(Scanner s) {
-        // set counter
         int counter = 0;
 
         // set a linked list. will be size 4
